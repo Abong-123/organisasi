@@ -3,129 +3,174 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Komunitas Nusantara Maker – Belajar, Bikin, Berbagi</title>
-  <meta name="description" content="Komunitas elektronika, IoT, dan robotik. Belajar bareng, bikin proyek nyata, berbagi ilmu." />
+  <title>Komunitas Nusantara Maker – Komunitas Elektronika, IoT & Robotik</title>
+  <meta name="description" content="Komunitas Nusantara Maker: wadah belajar elektronika, IoT, dan robotik melalui pelatihan, mentoring, dan proyek kolaborasi." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="dist/output.css" />
 </head>
 <body>
 
-  <header id="nav" class="fixed inset-x-0 top-0 z-50 transition">
-    <div class="wrap flex items-center justify-between py-4">
-      <a href="#top" class="font-display text-xl font-bold text-slate-900">⚡ Nusantara<span class="grad-text">Maker</span></a>
-      <nav id="menu" class="hidden items-center gap-7 text-sm font-semibold md:flex"></nav>
-      <a href="#gabung" class="btn hidden !px-5 !py-2.5 md:inline-flex">Gabung</a>
-      <button id="burger" class="text-3xl md:hidden" aria-label="Menu">☰</button>
+  <!-- NAV -->
+  <header id="nav" class="fixed inset-x-0 top-0 z-50 text-white transition duration-300">
+    <div class="wrap flex h-[72px] items-center justify-between">
+      <a href="#top" class="flex items-center gap-3">
+        <span class="flex h-9 w-9 items-center justify-center rounded-md bg-brand-600 font-display text-lg font-bold">K</span>
+        <span class="font-display text-[15px] font-semibold leading-tight">Komunitas<br><span class="text-brand-400">Nusantara Maker</span></span>
+      </a>
+      <nav id="menu" class="hidden items-center gap-8 text-[13px] font-medium lg:flex"></nav>
+      <a href="#gabung" class="btn hidden !py-2.5 lg:inline-flex">Daftar Anggota</a>
+      <button id="burger" class="text-3xl lg:hidden" aria-label="Menu">☰</button>
     </div>
-    <nav id="mmenu" class="hidden flex-col border-t bg-white px-5 pb-4 text-sm font-semibold md:hidden"></nav>
+    <nav id="mmenu" class="hidden flex-col bg-ink-950 px-5 pb-5 text-sm lg:hidden"></nav>
   </header>
 
   <!-- HERO -->
-  <section id="top" class="relative overflow-hidden pt-32 pb-20 md:pt-40 md:pb-28">
-    <div class="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_20%_20%,#c7d2fe_0,transparent_45%),radial-gradient(circle_at_85%_30%,#a5f3fc_0,transparent_40%)]"></div>
-    <div class="absolute inset-0 -z-10 opacity-40 [background-image:linear-gradient(#cbd5e1_1px,transparent_1px),linear-gradient(90deg,#cbd5e1_1px,transparent_1px)] [background-size:44px_44px] [mask-image:radial-gradient(ellipse_at_center,black,transparent_70%)]"></div>
-    <div class="wrap grid items-center gap-12 md:grid-cols-2">
-      <div>
-        <span class="chip">Komunitas Elektronika · IoT · Robotik</span>
-        <h1 class="mt-5 font-display text-4xl font-bold leading-tight text-slate-900 md:text-6xl">Belajar. <span class="grad-text">Bikin.</span> Berbagi.</h1>
-        <p class="mt-5 max-w-lg text-lg text-slate-600">Rumah bagi para maker yang ingin mengubah ide menjadi alat nyata, dari lampu pintar sampai robot, bersama teman yang saling mendukung.</p>
-        <div class="mt-8 flex flex-wrap gap-3"><a href="#gabung" class="btn">Daftar Jadi Anggota</a><a href="#agenda" class="btn-line">Lihat Agenda</a></div>
-      </div>
-      <div class="relative mx-auto h-80 w-full max-w-md">
-        <div class="absolute left-4 top-0 w-56 animate-float rounded-3xl bg-white p-5 shadow-xl"><p class="text-3xl">🤖</p><p class="mt-2 font-bold text-slate-900">Robot Line Follower</p><p class="text-xs text-slate-500">Workshop Level 2</p></div>
-        <div class="absolute right-0 top-24 w-52 animate-float rounded-3xl bg-slate-900 p-5 text-white shadow-xl [animation-delay:1.2s]"><p class="text-3xl">📡</p><p class="mt-2 font-bold">Smart Home MQTT</p><p class="text-xs text-slate-400">Proyek kolaborasi</p></div>
-        <div class="absolute bottom-0 left-12 w-48 animate-float rounded-3xl bg-gradient-to-br from-indigo-600 to-cyan-500 p-5 text-white shadow-xl [animation-delay:2.4s]"><p class="text-3xl">🏆</p><p class="mt-2 font-bold">Juara Lomba</p><p class="text-xs text-indigo-100">Kontes IoT Nasional</p></div>
-      </div>
+  <section id="top" class="relative isolate flex min-h-[94vh] items-center bg-ink-950 text-white">
+    <img data-img="hackaton.jpg" alt="" class="absolute inset-0 -z-10 h-full w-full object-cover opacity-45" />
+    <div class="absolute inset-0 -z-10 bg-gradient-to-r from-ink-950 via-ink-950/85 to-ink-950/30"></div>
+    <div class="wrap pt-32 pb-44">
+      <p class="eyebrow eyebrow-l">Komunitas Elektronika · IoT · Robotik</p>
+      <h1 class="max-w-3xl font-display text-4xl font-semibold leading-[1.08] tracking-tight md:text-6xl">Membangun talenta teknologi lewat praktik, mentoring, dan kolaborasi.</h1>
+      <p class="mt-6 max-w-xl text-lg leading-relaxed text-slate-300">Sejak 2019, Nusantara Maker menjadi wadah bagi pelajar, mahasiswa, dan profesional muda untuk mengubah ide menjadi prototipe yang berfungsi.</p>
+      <div class="mt-10 flex flex-wrap gap-3"><a href="#gabung" class="btn">Bergabung Sekarang</a><a href="#divisi" class="btn-ghost">Jelajahi Program</a></div>
+    </div>
+    <div class="absolute inset-x-0 bottom-0 border-t border-white/10 bg-ink-950/75 backdrop-blur">
+      <div id="heroStrip" class="wrap grid divide-white/10 md:grid-cols-3 md:divide-x"></div>
     </div>
   </section>
 
-  <!-- STATS -->
-  <section class="bg-slate-900 py-12"><div id="stats" class="wrap grid grid-cols-2 gap-8 text-center md:grid-cols-4"></div></section>
+  <!-- STATISTIK -->
+  <section class="border-b border-slate-200 bg-white">
+    <div id="stats" class="wrap grid grid-cols-2 gap-y-8 py-14 md:grid-cols-4"></div>
+  </section>
 
   <!-- TENTANG -->
-  <section id="tentang" class="py-20 md:py-28">
-    <div class="wrap grid gap-12 md:grid-cols-2">
-      <div class="reveal"><span class="chip">Tentang Kami</span><h2 class="sec-title mt-4">Tempat ide jadi prototipe.</h2>
-        <p class="mt-4 leading-relaxed">Komunitas Nusantara Maker berdiri tahun 2019 oleh sekelompok mahasiswa yang gemar utak-atik rangkaian. Kini kami terbuka untuk pelajar, mahasiswa, dan umum yang ingin belajar teknologi lewat praktik langsung.</p></div>
-      <div class="reveal grid gap-4">
-        <div class="card"><h3 class="font-bold text-slate-900">🎯 Visi</h3><p class="mt-2 text-sm">Menjadi komunitas maker terbuka yang melahirkan inovator teknologi dari daerah.</p></div>
-        <div class="card"><h3 class="font-bold text-slate-900">🚀 Misi</h3><ul class="mt-2 list-inside list-disc space-y-1 text-sm"><li>Menyelenggarakan pelatihan praktis dan terjangkau</li><li>Mendorong proyek kolaborasi berdampak nyata</li><li>Membuka akses alat dan mentor bagi pemula</li></ul></div>
+  <section id="tentang" class="py-24 md:py-32">
+    <div class="wrap grid items-center gap-16 lg:grid-cols-2">
+      <div class="reveal relative">
+        <div class="h-[420px] overflow-hidden rounded-2xl md:h-[540px]"><img data-img="mentoring.jpg" alt="Sesi mentoring" data-zoom class="h-full w-full cursor-zoom-in object-cover" /></div>
+        <div class="absolute -bottom-8 -right-2 hidden w-56 overflow-hidden rounded-xl border-4 border-white shadow-xl md:block md:-right-8"><img data-img="session.jpg" alt="Sesi belajar" data-zoom class="h-40 w-full cursor-zoom-in object-cover" /></div>
+      </div>
+      <div class="reveal">
+        <p class="eyebrow">Tentang Organisasi</p>
+        <h2 class="h2">Wadah belajar yang terstruktur, terbuka, dan berorientasi hasil.</h2>
+        <p class="lead">Komunitas Nusantara Maker dibentuk oleh mahasiswa teknik yang ingin pembelajaran elektronika tidak berhenti di ruang kelas. Kami menyediakan kurikulum bertahap, mentor berpengalaman, dan akses alat agar setiap anggota dapat menghasilkan karya nyata.</p>
+        <div class="mt-9 grid gap-6 sm:grid-cols-2">
+          <div class="border-l-2 border-brand-600 pl-5"><h3 class="font-display font-semibold text-ink-900">Visi</h3><p class="mt-2 text-sm leading-relaxed">Menjadi komunitas maker terbuka yang melahirkan inovator teknologi dari daerah.</p></div>
+          <div class="border-l-2 border-brand-600 pl-5"><h3 class="font-display font-semibold text-ink-900">Misi</h3><p class="mt-2 text-sm leading-relaxed">Pelatihan praktis yang terjangkau, proyek kolaboratif berdampak, dan akses alat serta mentor bagi pemula.</p></div>
+        </div>
+        <ul class="mt-8 grid gap-3 text-sm sm:grid-cols-2" id="nilai"></ul>
       </div>
     </div>
   </section>
 
   <!-- DIVISI -->
-  <section id="divisi" class="bg-white py-20 md:py-28">
-    <div class="wrap"><span class="chip">Divisi</span><h2 class="sec-title mt-4">Pilih jalurmu.</h2><p class="sec-sub">Setiap anggota bebas ikut lebih dari satu divisi.</p>
-      <div id="divisiList" class="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-4"></div></div>
-  </section>
-
-  <!-- AGENDA -->
-  <section id="agenda" class="py-20 md:py-28">
-    <div class="wrap grid gap-10 lg:grid-cols-5">
-      <div class="lg:col-span-2">
-        <span class="chip">Agenda</span><h2 class="sec-title mt-4">Acara berikutnya.</h2>
-        <div id="countdown" class="mt-8 rounded-3xl bg-gradient-to-br from-indigo-600 to-cyan-500 p-7 text-white shadow-xl"></div>
-      </div>
-      <div id="agendaList" class="space-y-4 lg:col-span-3"></div>
+  <section id="divisi" class="bg-slate-50 py-24 md:py-32">
+    <div class="wrap">
+      <div class="reveal max-w-2xl"><p class="eyebrow">Divisi & Bidang</p><h2 class="h2">Empat bidang keahlian, satu ekosistem.</h2><p class="lead">Anggota dapat mengikuti lebih dari satu divisi dan berkolaborasi lintas bidang pada proyek bersama.</p></div>
+      <div id="divisiList" class="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4"></div>
     </div>
   </section>
 
   <!-- PROGRAM -->
-  <section id="program" class="bg-slate-900 py-20 text-slate-300 md:py-28">
-    <div class="wrap"><span class="chip !bg-white/10 !text-cyan-300">Program Tahunan</span><h2 class="sec-title mt-4 !text-white">Perjalanan satu tahun.</h2>
-      <div id="programList" class="mt-12 grid gap-6 md:grid-cols-4"></div></div>
+  <section id="program" class="bg-ink-950 py-24 text-slate-300 md:py-32">
+    <div class="wrap">
+      <div class="reveal max-w-2xl"><p class="eyebrow eyebrow-l">Program Tahunan</p><h2 class="h2 !text-white">Alur pembinaan sepanjang tahun.</h2></div>
+      <div id="programList" class="mt-14 grid gap-px overflow-hidden rounded-2xl bg-white/10 sm:grid-cols-2 lg:grid-cols-4"></div>
+    </div>
   </section>
 
-  <!-- PENGURUS -->
-  <section id="pengurus" class="py-20 md:py-28">
-    <div class="wrap"><span class="chip">Pengurus</span><h2 class="sec-title mt-4">Orang-orang di balik layar.</h2>
-      <div id="pengurusList" class="mt-10 grid grid-cols-2 gap-5 md:grid-cols-4"></div></div>
+  <!-- AGENDA -->
+  <section id="agenda" class="py-24 md:py-32">
+    <div class="wrap grid gap-14 lg:grid-cols-5">
+      <div class="reveal lg:col-span-2">
+        <p class="eyebrow">Agenda</p><h2 class="h2">Kegiatan mendatang.</h2>
+        <div class="relative mt-9 overflow-hidden rounded-2xl bg-ink-900 text-white">
+          <img data-img="training.jpg" alt="" class="absolute inset-0 h-full w-full object-cover opacity-25" />
+          <div id="countdown" class="relative p-8"></div>
+        </div>
+      </div>
+      <div id="agendaList" class="divide-y divide-slate-200 border-y border-slate-200 lg:col-span-3"></div>
+    </div>
   </section>
 
   <!-- GALERI -->
-  <section id="galeri" class="bg-white py-20 md:py-28">
-    <div class="wrap"><span class="chip">Galeri Proyek</span><h2 class="sec-title mt-4">Hasil karya anggota.</h2>
-      <p class="sec-sub">Ganti emoji dengan foto proyek sungguhan lewat properti <code>img</code> di <code>js/main.js</code>.</p>
-      <div id="galeriList" class="mt-10 grid grid-cols-2 gap-4 md:grid-cols-4"></div></div>
+  <section id="galeri" class="bg-slate-50 py-24 md:py-32">
+    <div class="wrap">
+      <div class="reveal flex flex-wrap items-end justify-between gap-4"><div><p class="eyebrow">Dokumentasi</p><h2 class="h2">Momen dan karya anggota.</h2></div><p class="text-sm text-slate-500">Klik foto untuk memperbesar</p></div>
+      <div id="galeriList" class="mt-12 grid auto-rows-[160px] grid-cols-2 gap-3 md:auto-rows-[210px] md:grid-cols-4"></div>
+    </div>
+  </section>
+
+  <!-- PENGURUS -->
+  <section id="pengurus" class="py-24 md:py-32">
+    <div class="wrap">
+      <div class="reveal max-w-2xl"><p class="eyebrow">Kepengurusan</p><h2 class="h2">Tim di balik komunitas.</h2></div>
+      <div id="pengurusList" class="mt-12 grid grid-cols-2 gap-6 md:grid-cols-4"></div>
+    </div>
+  </section>
+
+  <!-- TESTIMONI -->
+  <section class="bg-brand-700 py-24 text-white md:py-28">
+    <div class="wrap">
+      <p class="eyebrow eyebrow-l !text-brand-100 before:!bg-brand-100">Suara Anggota</p>
+      <div id="testi" class="mt-6 grid gap-8 md:grid-cols-3"></div>
+    </div>
   </section>
 
   <!-- ARTIKEL -->
-  <section id="artikel" class="py-20 md:py-28">
-    <div class="wrap"><span class="chip">Artikel</span><h2 class="sec-title mt-4">Tulisan dari komunitas.</h2>
-      <div id="artikelList" class="mt-10 grid gap-5 md:grid-cols-3"></div></div>
-  </section>
-
-  <!-- GABUNG -->
-  <section id="gabung" class="bg-gradient-to-br from-indigo-600 to-cyan-500 py-20 md:py-28">
-    <div class="wrap grid items-center gap-12 lg:grid-cols-2">
-      <div class="text-white"><h2 class="font-display text-3xl font-bold md:text-5xl">Siap bikin sesuatu bareng kami?</h2>
-        <p class="mt-4 text-indigo-50">Pendaftaran gratis dan terbuka sepanjang tahun. Isi formulir, lalu admin akan menghubungi lewat WhatsApp.</p>
-        <ul class="mt-6 space-y-2 text-sm"><li>✓ Akses workshop dan mentoring</li><li>✓ Peminjaman alat komunitas</li><li>✓ Jejaring maker se-Jawa Tengah</li></ul></div>
-      <form id="form" class="grid gap-4 rounded-3xl bg-white p-6 shadow-2xl sm:grid-cols-2 md:p-8">
-        <input name="nama" required placeholder="Nama lengkap" class="field" />
-        <input name="asal" required placeholder="Kampus / Sekolah / Instansi" class="field" />
-        <select name="divisi" class="field sm:col-span-2"></select>
-        <textarea name="alasan" rows="3" placeholder="Kenapa ingin bergabung? (opsional)" class="field sm:col-span-2"></textarea>
-        <button class="btn sm:col-span-2">Kirim via WhatsApp</button>
-      </form>
+  <section id="artikel" class="py-24 md:py-32">
+    <div class="wrap">
+      <div class="reveal flex flex-wrap items-end justify-between gap-4"><div><p class="eyebrow">Publikasi</p><h2 class="h2">Artikel & panduan.</h2></div></div>
+      <div id="artikelList" class="mt-12 grid gap-8 md:grid-cols-3"></div>
     </div>
   </section>
 
   <!-- FAQ -->
-  <section id="faq" class="py-20 md:py-28">
-    <div class="wrap max-w-3xl"><span class="chip">FAQ</span><h2 class="sec-title mt-4">Pertanyaan umum.</h2><div id="faqList" class="mt-8 space-y-3"></div></div>
+  <section id="faq" class="bg-slate-50 py-24 md:py-32">
+    <div class="wrap grid gap-14 lg:grid-cols-3">
+      <div class="reveal"><p class="eyebrow">FAQ</p><h2 class="h2">Pertanyaan yang sering diajukan.</h2><p class="lead">Belum menemukan jawabannya? Hubungi admin lewat formulir pendaftaran di bawah.</p></div>
+      <div id="faqList" class="space-y-3 lg:col-span-2"></div>
+    </div>
   </section>
 
-  <footer class="bg-slate-900 py-10 text-sm text-slate-400">
-    <div class="wrap flex flex-col items-center justify-between gap-3 md:flex-row">
-      <p class="font-display text-lg font-bold text-white">⚡ NusantaraMaker</p>
-      <p>Sekretariat: Jl. Teknologi No. 7, Salatiga · @nusantaramaker</p>
-      <p>© <span id="yr"></span> KNM</p>
+  <!-- DAFTAR -->
+  <section id="gabung" class="relative isolate overflow-hidden bg-ink-950 py-24 text-white md:py-32">
+    <img data-img="learning.jpg" alt="" class="absolute inset-0 -z-10 h-full w-full object-cover opacity-20" />
+    <div class="wrap grid items-center gap-14 lg:grid-cols-2">
+      <div>
+        <p class="eyebrow eyebrow-l">Pendaftaran Anggota</p>
+        <h2 class="h2 !text-white">Mulai perjalananmu bersama kami.</h2>
+        <p class="mt-5 max-w-lg text-slate-300">Pendaftaran gratis dan dibuka sepanjang tahun. Setelah mengirim formulir, admin akan menghubungi Anda melalui WhatsApp untuk proses orientasi.</p>
+        <ul class="mt-8 space-y-3 text-sm text-slate-200"><li class="flex gap-3"><span class="text-brand-400">✓</span>Akses workshop dan mentoring terjadwal</li><li class="flex gap-3"><span class="text-brand-400">✓</span>Peminjaman peralatan komunitas</li><li class="flex gap-3"><span class="text-brand-400">✓</span>Sertifikat keikutsertaan program</li></ul>
+      </div>
+      <form id="form" class="grid gap-4 rounded-2xl bg-white p-7 text-slate-700 shadow-2xl sm:grid-cols-2 md:p-9">
+        <h3 class="font-display text-xl font-semibold text-ink-900 sm:col-span-2">Formulir Pendaftaran</h3>
+        <label class="text-xs font-semibold uppercase tracking-wider text-slate-500">Nama lengkap<input name="nama" required class="field mt-1.5 normal-case tracking-normal" /></label>
+        <label class="text-xs font-semibold uppercase tracking-wider text-slate-500">Asal institusi<input name="asal" required class="field mt-1.5 normal-case tracking-normal" /></label>
+        <label class="text-xs font-semibold uppercase tracking-wider text-slate-500 sm:col-span-2">Divisi diminati<select name="divisi" class="field mt-1.5 normal-case tracking-normal"></select></label>
+        <label class="text-xs font-semibold uppercase tracking-wider text-slate-500 sm:col-span-2">Motivasi bergabung<textarea name="alasan" rows="3" class="field mt-1.5 normal-case tracking-normal"></textarea></label>
+        <button class="btn sm:col-span-2">Kirim melalui WhatsApp</button>
+      </form>
     </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-ink-950 text-sm text-slate-400">
+    <div class="wrap grid gap-10 border-t border-white/10 py-14 md:grid-cols-4">
+      <div class="md:col-span-2">
+        <p class="flex items-center gap-3 font-display font-semibold text-white"><span class="flex h-9 w-9 items-center justify-center rounded-md bg-brand-600 text-lg">K</span>Komunitas Nusantara Maker</p>
+        <p class="mt-4 max-w-sm leading-relaxed">Wadah belajar elektronika, IoT, dan robotik untuk generasi muda Indonesia.</p>
+      </div>
+      <div><p class="mb-4 font-semibold text-white">Navigasi</p><div id="fnav" class="flex flex-col gap-2.5"></div></div>
+      <div><p class="mb-4 font-semibold text-white">Kontak</p><p>Jl. Teknologi No. 7, Salatiga, Jawa Tengah</p><p class="mt-2">halo@nusantaramaker.example</p><p class="mt-2">@nusantaramaker</p></div>
+    </div>
+    <p class="border-t border-white/10 py-5 text-center text-xs">© <span id="yr"></span> Komunitas Nusantara Maker</p>
   </footer>
+
+  <div id="lb" class="fixed inset-0 z-[60] hidden cursor-zoom-out items-center justify-center bg-black/90 p-4"><img class="max-h-full max-w-full rounded-lg" alt="" /></div>
 
   <script src="js/main.js"></script>
 </body>
